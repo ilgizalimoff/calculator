@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@1,500&family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/slick.css">
+    <link rel="stylesheet" href="./css/jquery.fancybox.min.css"> 
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">      
+            <input placeholder = "0" id="inputNumberField">  
+            <br/>                  
+            <button class = "button"  onclick="clickFunc(1)">1</button>
+            <button class = "button"  onclick="clickFunc(2)">2</button>
+            <button class = "button"  onclick="clickFunc(3)">3</button>
+            <button class = "button"  onclick="clickFunc('/')">/</button>
+            <br/>
+            <button class = "button"  onclick="clickFunc(4)">4</button>
+            <button class = "button"  onclick="clickFunc(5)">5</button>
+            <button class = "button"  onclick="clickFunc(6)">6</button>
+            <button class = "button"  onclick="clickFunc('*')">*</button>
+            <br/>
+            <button class = "button"  onclick="clickFunc(7)">7</button>
+            <button class = "button"  onclick="clickFunc(8)">8</button>
+            <button class = "button"  onclick="clickFunc(9)">9</button>
+            <button class = "button"  onclick="clickFunc('+')">+</button>
+            <br/>
+            <button class = "button"  onclick="clickFunc('.')">.</button>
+            <button class = "button"  onclick="clickFunc(0)">0</button>
+            <button class = "button"  id = "clear">C</button>
+            <button class = "button"  onclick="clickFunc('-')">-</button>
+            <br/>
+            <button class = "result" id = "result">=</button>       
+        </div>
+                              
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery.formstyler.min.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+</html>
