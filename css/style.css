@@ -1,57 +1,93 @@
-body{
-    background: linear-gradient(#f4f3f3, white);
-    overflow: hidden;/*?*/
+* {
+    margin: 0;
+    padding: 0;
 }
-.container{
-    border: 1px solid black;
+
+body {
+    background: linear-gradient(#f4f3f3, white);
+    overflow: hidden;
+}
+
+.container {
     width: 95%;
-    height: 100vh;/*?*/
+    height: 100vh;
     margin: auto;
-    display: flex;/*?*/
-    justify-content: center;/*?*/
+    display: flex;
+    justify-content: center;
     align-items: center;
 }
-.calculator{
+
+.calculator {
     border: 1px solid black;
     width: 370px;
     border-radius: 2px;
     background: #f2f2f2;
     padding: 15px;
-    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5);   
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
 }
-#inputNumberField{
-    box-sizing: border-box;/*?*/
+
+#inputNumberField {
+    box-sizing: border-box;
+    color: black;
+    font-weight: 900;
     width: 100%;
-    padding: 10px 40px;
-    text-align: right;/*?*/
+    padding: 10px;
+    text-align: right;
+    border: 1px solid teal;
     background: whitesmoke;
-    direction: 1tr;/*?*/
-    outline: none;/*?*/
-    border: none;/*?*/
+    direction: 1tr;
+    outline: none;
 }
-.button{
-    width: 24%;
+
+.button {
+    box-sizing: border-box;
+    width: 24.1%;
     margin-top: 1px;
     height: 45px;
     border-radius: 1px;
-    border: none;
+    border: 0.5px solid teal;
     outline: none;
     background: whitesmoke;
 }
-.result{
+
+.result {
+    border: 1px solid teal;
     width: 100%;
     margin-top: 1px;
     height: 45px;
     border-radius: 1px;
-    border: none;
     outline: none;
-    background: whitesmoke; 
+    background: whitesmoke;
 }
-.button:hover, .result:hover{
+
+.button:hover,
+.result:hover {
     background-color: rgba(128, 128, 128, 0.1);
 }
-@media(max-width:480px){
-    .button{
-        width: 23.2%;
+
+@media(max-width:400px) {
+
+    #inputNumberField,
+    .result {
+        width: 80%;
+    }
+
+    .button {
+        width: 19.1%;
+    }
+
+    .calculator {
+        text-align: center;
+    }
+}
+
+@media(max-width:400px) {
+    .button {
+        width: 17.1%;
+    }
+
+    #inputNumberField,
+    .result {
+        width: 73%;
     }
 }
